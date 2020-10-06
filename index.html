@@ -10,33 +10,159 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet"> 
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <title> devl-const</title>
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <div class="header">
-            <div class="container"> 
-                <h1>&ltl-const&gt</h1>
-            </div> 
-            
-        </div>
 
-        <div class="content">
-        
-        </div>
+        <!-- Header -->
+        <div class = "header">
 
-        <div class="container"> 
-        
-        </div>
-        <div class="footer">
-            <div class="container"> 
-            
-                <i> &lt/l-const&gt @ dev.to</i>
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
             </div>
-        </div>
 
-        {% comment %} <script src="" async defer></script> {% endcomment %}
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+
+            <div class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a> </li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My services</a> </li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a> </li>
+                    <li class="nav__item"><a href="#" class="nav__link">My Blog</a> </li>
+
+
+                </ul>
+
+            </div>
+        </div> <!--header-->
+
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Konstantinos <br> Lampropoulos</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Software developer</p>
+            <img src="img/me.png" alt="a picture of me">
+
+        </section>
+
+
+
+        <!-- My services -->
+       <section class="my-services" id="services"> 
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Frontend</h3>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                         cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                          anim id est laborum."</p>
+                </div>  <!-- /service -->
+                
+
+                <div class="service">
+                    <h3>Backend</h3>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                         cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                          anim id est laborum."</p>
+                </div>  <!-- /service -->
+
+
+                <div class="service">
+                    <h3>System Engineering</h3>
+                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna
+                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                         cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                          anim id est laborum."</p>
+                </div>  <!-- /service -->
+
+
+            </div> <!-- /SERVICES -->
+
+            <a href="#cv" class="btn">My Work</a>
+       </section>
+
+
+
+
+       <!-- About me -->
+
+       <section class="about-me" id="about"> 
+            <h2 class="section__title section__title--about">Who I am</h2>
+            <p class="section__subtitle section__subtitle--about"> Developer based out of Athens, Greece</p>
+
+            <div class="about-me__body">
+                <h3>Download my CV!</h3>
+                <button class="btn-resume" id="cv">RESUME</button>
+            </div>
+           
+            <!-- <img src="img/me.png" alt="photo of me"> -->
+        </section>
+
+
+
+
+       <!-- Footer -->
+       <footer class="footer">
+
+        <a href="mailto:l-const@outlook.com" class="footer__link">Hello@l-const</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/l-const">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://gitlab.com/klampropoulos">
+                        <i class="fab fa-gitlab"></i>
+                    </a>
+                </li>
+               
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/konstantinos-lampropoulos-970163152/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+               
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://dev.to">
+                        <i class="fab fa-dev"></i>
+                    </a>
+                </li>
+               
+               
+
+            </ul>
+       </footer>
+
+
+
+    <script src="index.js"></script>
     </body>
 </html>
