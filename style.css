@@ -1,0 +1,35 @@
+* {
+    color: white;
+}
+
+
+body {
+    background-color :white;
+}
+
+
+.header {
+    margin: 0 auto;
+    padding: 2em;
+    width: 80%;
+    /* background-color: magenta; */
+    background-image: linear-gradient(150deg, rgb(223, 25, 68), rgb(243, 172, 252));
+}
+
+.container {
+    text-align: center;
+}
+
+
+.content {
+    padding: 5em;
+}
+
+
+.footer {
+    background-image: linear-gradient(150deg, rgb(253, 4, 4), rgb(245, 16, 104));
+    font-size: 0.6rem;
+    margin: 0 auto;
+    padding: 3em;
+    width: 80%;
+}
