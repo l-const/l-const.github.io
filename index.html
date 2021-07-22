@@ -1,147 +1,66 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Konstantinos L.</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet"> 
-
+        <link rel="stylesheet" href="css/main.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-     
     </head>
     <body>
-
-        <!-- Header -->
-        <div class = "header">
-
-            <!-- <div class="logo">
-                <img src="img/logo.png" alt="logo">
-            </div> -->
-
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-
-            <div class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a> </li>
-                    <li class="nav__item"><a href="#services" class="nav__link">My skills</a> </li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a> </li>
-                    <li class="nav__item"><a href="/blog" class="nav__link">My Blog</a> </li>
-
-
-                </ul>
-
+        <header>
+            <div><a href="#" id="blog" class="primary_buttons">Blog</a></div>
+          <div><a href="cv.pdf" id="cv" class="primary_buttons" ><i class="fa fa-download"></i>Resume</a></div>  
+        </header>
+        <main>
+            <div id="first">
+                <p>
+                    Hi, my name is Konstantinos <br> Lampropoulos
+                </p>
             </div>
-        </div> <!--header-->
 
+           <div id="second">
+               <p>
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quia, nulla dolore vero rem in culpa, aliquam nemo dignissimos harum veritatis, architecto ducimus nihil mollitia illum. Id in magni nisi.
+               </p>
+                 <p>
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quia, nulla dolore vero rem in culpa, aliquam nemo dignissimos harum veritatis, architecto ducimus nihil mollitia illum. Id in magni nisi.
+               </p>
+           </div> 
 
-        <!-- Introduction -->
-        <section class="intro" id="home">
+           <div id="mn_btn_container">
+                    <div>
+                        <a href="cv.pdf" class="primary_buttons"><i class="fa fa-download"></i>Resume</a>
+                    </div>
 
-            <h1 class="section__title section__title--intro">
-                Hi, my name is <strong>Konstantinos <br> Lampropoulos</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">and i'm a Software developer</p>
-            <img src="img/photo.png" alt="a picture of me">
-
-        </section>
-
-
-
-        <!-- My services -->
-       <section class="my-services" id="services"> 
-            <h2 class="section__title section__title--services">What I do</h2>
-            <div class="services">
-                <div class="service">
-                    <h3>Frontend</h3>
-                    <p></p>
-                </div>  <!-- /service -->
-                
-
-                <div class="service">
-                    <h3>Backend</h3>
-                    <p></p>
-                </div>  <!-- /service -->
-
-
-                <div class="service">
-                    <h3>System Engineering</h3>
-                    <p></p>
-                </div>  <!-- /service -->
-
-
-            </div> <!-- /SERVICES -->
-
-            <a href="#cv" class="btn">My Work</a>
-       </section>
-
-
-
-
-       <!-- About me -->
-
-       <section class="about-me" id="about"> 
-            <h2 class="section__title section__title--about">Who I am</h2>
-            <p class="section__subtitle section__subtitle--about"> Developer based out of Athens, Greece</p>
-            <img src="img/rsz_athens.jpg" alt="photo of me">
-
-            <div class="about-me__body">
-                <h3>Download my Resume</h3>
-                <a href="cv.pdf" id="cv" class="btn"><i class="fa fa-download"></i>Resume</a>
+                <div><a class="primary_buttons" id="email-btn" href="mailto:konlampro94@gmail.com">Send me an email</a></div> 
+           </div>
+           <div id="social_text">
+            <p>Find me on social!</p>
+           </div>
+            <div id="footer_btn_container">
+                <div class="footer_buttons">
+                        <a  href="https://github.com/l-const">
+                            <i class="fab fa-github"></i>
+                        </a>
+                </div>
+                <div class="footer_buttons">
+                        <a  href="https://www.linkedin.com/in/konlampropoulos">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                </div>
+                <div class="footer_buttons">
+                        <a  href="https://www.reddit.com/user/l-const">
+                            <i class="fab fa-reddit-square"></i>
+                        </a>
+                </div>
+                <div class="footer_buttons">
+                        <a  href="https://discord.com/channels/594737097521496084">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                </div>
             </div>
-           
-        </section>
-
-
-
-
-       <!-- Footer -->
-       <footer class="footer">
-
-        <a href="mailto:l-const@outlook.com" class="footer__link">Hello@l-const</a>
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com/l-const">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://gitlab.com/klampropoulos">
-                        <i class="fab fa-gitlab"></i>
-                    </a>
-                </li>
-               
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.linkedin.com/in/konstantinos-lampropoulos-970163152/">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </li>
-               
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://dev.to">
-                        <i class="fab fa-dev"></i>
-                    </a>
-                </li>
-               
-               
-
-            </ul>
-       </footer>
-
-
-
-    <script src="index.js"></script>
+        </main>
     </body>
 </html>

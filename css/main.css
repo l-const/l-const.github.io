@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+
+
+:root {
+    --button-color: #5a29e4;
+    --box-shadow-color: rgba(91, 41, 228, 0.365);
+    --pink-color: rgb(200, 56, 149);
+	box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(255, 255, 255, 0.616);
+    color: rgb(31, 28, 36);
+    margin: 0 4rem;
+}
+
+body {
+    margin: 2rem auto;
+    height: 100vh;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+main {
+    margin: 1rem auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+
+
+#second {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+#first {
+    width: 100%;
+    margin-top: 2rem;
+    padding-top: 0rem;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    letter-spacing: 4px;
+}
+
+
+ul {
+   list-style: none; 
+}
+
+.primary_buttons {
+    box-shadow:  0px 10px 30px 0px var(--box-shadow-color);
+    border-radius: 10px;
+    margin: 1rem;
+    padding: 0.8em 2em; 
+    max-width: 1.9rem;
+    height: 2rem;
+    background: var(--button-color);
+}
+
+.primary_buttons:hover {
+    transition-duration: 0.9s;
+    transform: scale(0.97);
+    opacity: 0.79;
+}
+
+#social_text {
+    /* margin-top: 4rem; */
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: wavy;
+    margin: 4rem auto 0rem auto;
+}
+
+#social_text p {
+    text-decoration: underline;
+}
+
+p {
+  max-width: 500px;
+}
+
+header {
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 2em;
+}
+
+div a {
+    border-radius: 4px;
+    max-width: 10rem;
+    padding: 1em 1em;
+    text-decoration: none;
+    color: white;
+}
+
+#mn_btn_container{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    padding: 0em;
+}
+
+#footer_btn_container {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0em;
+}
+
+
+.footer_buttons {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:  0px 10px 30px 0px var(--box-shadow-color);
+    border-radius: 10px;
+    /* margin: 1rem;
+    /* padding: 0.8em 2em;  */
+    padding: 0px 18px;
+    /* max-width: 3rem; */
+    /* max-height: 3rem; */
+    background: var(--button-color); 
+}
+
+
+.footer_buttons:hover {
+    transition-duration: 0.9s;
+    transform: scale(1.1);
+}
+
+.footer_buttons i {
+    transform: scale(2);
+}
+
+
+
+.footer_buttons + .footer_buttons {
+    margin-left: 2rem;
+}
+
+
+#email-btn{
+    box-shadow:  0px 10px 30px 0px rgba(200, 56, 149, 0.1); 
+    background-color: rgba(255, 255, 255, 0.616);
+    color:rgb(200, 56, 149);
+    border: 1px solid rgb(200, 56, 149);
+}
+
+#email-btn:hover {
+    transition-duration: 0.3s;
+    box-shadow: inset 60px 60px 0px rgba(255, 236, 251, 0.616), 0px 10px 30px 0px rgba(200, 56, 149, 0.1);
+}
+
+
+#blog{
+    box-shadow:  0px 10px 30px 0px rgba(200, 56, 149, 0.1); 
+    background-color: rgba(255, 255, 255, 0.616);
+    color:rgb(200, 56, 149);
+    border: 1px solid rgb(200, 56, 149);
+}
+
+#blog:hover {
+    transition-duration: 0.3s;
+    box-shadow: inset 60px 60px 0px rgba(255, 236, 251, 0.616), 0px 10px 30px 0px rgba(200, 56, 149, 0.1);
+}
+
+
+@media screen  and (max-width: 700px) {
+    :root {
+        font-size: 14px;
+    }
+
+    header {
+        margin: 0 auto;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    #second {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .primary_buttons {
+        transform: scale(0.9);
+        margin: 0.1rem 0.6rem;
+    }
+
+    h1 {
+        line-height: 2em;
+        margin: 0.1rem;
+        transform: scale(0.74);
+    }
+
+    .footer_buttons + .footer_buttons {
+         margin-left: 0.6rem;
+    }
+}
+
