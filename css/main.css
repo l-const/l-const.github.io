@@ -32,8 +32,6 @@ main {
 }
 
 
-
-
 #second {
     margin-top: 2rem;
     display: flex;
@@ -93,6 +91,7 @@ header {
     display: flex;
     justify-content: flex-start;
     margin-right: 2em;
+	padding: 0em;
 }
 
 div a {
@@ -103,7 +102,7 @@ div a {
     color: white;
 }
 
-#mn_btn_container{
+#mn_btn_container {
     margin-top: 4rem;
     display: flex;
     flex-direction: row;
@@ -127,11 +126,7 @@ div a {
     box-shadow:  0px 10px 30px 0px var(--box-shadow-color);
     border-radius: 10px;
 	margin-bottom: 1.5rem;
-    /* margin: 1rem;
-    /* padding: 0.8em 2em;  */
     padding: 0px 18px;
-    /* max-width: 3rem; */
-    /* max-height: 3rem; */
     background: var(--button-color); 
 }
 
@@ -146,13 +141,11 @@ div a {
 }
 
 
-
 .footer_buttons + .footer_buttons {
     margin-left: 2rem;
 }
 
-
-#email-btn{
+#email-btn {
     box-shadow:  0px 10px 30px 0px rgba(200, 56, 149, 0.1); 
     background-color: rgba(255, 255, 255, 0.616);
     color:rgb(200, 56, 149);
@@ -178,16 +171,31 @@ div a {
 }
 
 
-@media screen  and (max-width: 700px) {
+@media screen  and (max-width: 500px) {
     :root {
-        font-size: 14px;
+        font-size: 11px;
     }
 
     header {
+		flex-direction: column;
         margin: 0 auto;
-        align-items: flex-start;
-        justify-content: flex-start;
+        align-items: center;
+        justify-content: space-between;
     }
+
+	header div {
+		margin-top: 3rem;
+	}
+
+	#blog {
+		padding-left: 5em;
+		padding-right: 5em;
+	}
+
+	#cv {
+		padding-left: 4em;
+		padding-right: 4em;
+	}
 
     #second {
         display: flex;
@@ -196,9 +204,23 @@ div a {
 
 
     .primary_buttons {
-        transform: scale(0.9);
-        margin: 0.1rem 0.6rem;
+        transform: scale(0.6);
+        margin: 1.2rem 0.6rem;
     }
+
+	#mn_btn_container {
+		align-items: center;
+		flex-direction: column;
+	}
+
+	#mn_btn_container div {
+		margin-top: 3rem;
+	}
+
+	#footer_btn_container {
+		flex-direction: column;
+	}
+
 
     h1 {
         line-height: 2em;
@@ -206,8 +228,13 @@ div a {
         transform: scale(0.74);
     }
 
+	.footer_buttons {
+		transform: scale(0.8);
+	}
+
     .footer_buttons + .footer_buttons {
-         margin-left: 0.6rem;
+         margin-top: 0.6rem;
+		 margin-left: 0rem;
     }
 }
 
